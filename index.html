@@ -1,42 +1,58 @@
 <!DOCTYPE html>
 <html lang="de" xmlns:href="http://www.w3.org/1999/xhtml">
 <head>
-	<meta charset="UTF-8">
-	<title>Title</title>
-</head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Dennis Sand">
+    <meta name="copyright" content="Dennis Sand, 2022">
+    <title>Main</title>
+<body style="background-color:indianred;"></body>
 <body>
 <header>
-	<h1 style="margin:0">Einkaufsliste</h1>
-	<nav>Artikel hinzufügen +</nav>
+    <h1>Einkaufsliste</h1>
+    <nav>Artikel hinzufügen +</nav>
 </header>
 <hr/>
 <main>
-	<section>
-		<nav>
-			<h2> Einkauf</h2>
-			<ul>
-				<li>Brokkoli</li>
-				<li>Reis</li>
-				<li>Streukäse</li>
-			</ul>
-		</nav>
-	</section>
-	<hr/>
-	<section>
-		<h2>Erledigt</h2>
-		<ul>
-			<li><s>Tofu</s></li>
-		</ul>
-	</section>
+    <section>
+        <nav>
+            <h2> Einkauf</h2>
+            <dl>
+                <dt>Obst & Gemüse</dt>
+                <dd><label>
+                    <input type="checkbox"/>
+                </label>Brokkoli
+                </dd>
+                <dt>Getreideprodukte</dt>
+                <dd><label>
+                    <input type="checkbox"/>
+                </label>Reis
+                </dd>
+                <dt>Milchprodukte</dt>
+                <dd><label>
+                    <input type="checkbox"/>
+                </label>Streukäse
+                </dd>
+            </dl>
+        </nav>
+    </section>
+    <hr/>
+    <section>
+        <h2>Erledigt</h2>
+        <dl>
+            <dd><s><label>
+                <input type="checkbox" checked/>
+            </label>Tofu</s></dd>
+        </dl>
+    </section>
 </main>
 <hr/>
 <footer>
-	<nav>
-		<button onclick="document.location='gruppen.html'">Gruppen</button>
-		<button onclick="document.location='sortieren.html'">Sortieren</button>
-		<a href:sortieren.html></a>
-		<button onclick="document.location='setup.html'">Einstellungen</button>
-	</nav>
+    <nav>
+        <button onclick="document.location='gruppen.html'">Gruppen</button>
+        <button onclick="document.location='sortieren.html'">Sortieren</button>
+        <a href:sortieren.html></a>
+        <button onclick="document.location='setup.html'">Einstellungen</button>
+    </nav>
 </footer>
 </body>
 </html>
